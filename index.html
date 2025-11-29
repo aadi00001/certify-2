@@ -22,7 +22,13 @@
       <div><strong>Duration:</strong> 2 Month ( 1st July 2025 - 30th August 2025 )</div>
     </div>
 
-    <button id="goVerify" class="btn">Go to the Certification Verification</button>
+    <!-- Primary: local route handled by _redirects -->
+    <a id="goVerify" class="btn" href="/page/qr-verification">Go to the Certification Verification</a>
+
+    <!-- Visible external link (explicitly requested) -->
+    <p style="text-align:center; margin-top:14px;">
+      <a href="https://certificate-id-verify.netlify.app/page/qr-verification" target="_blank" rel="noopener noreferrer" class="example">Open external verification (QR target)</a>
+    </p>
   </main>
 
   <script src="/script.js"></script>
