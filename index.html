@@ -4,6 +4,8 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Certificate Verified — Certify</title>
+
+  <!-- Root-relative so it works on any Netlify site -->
   <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
@@ -20,8 +22,7 @@
       <div><strong>Duration:</strong> 2 Month ( 1st July 2025 - 30th August 2025 )</div>
     </div>
 
-    <!-- Primary: local route handled by _redirects -->
-    <a id="goVerify" class="btn" href="/page/qr-verification">Go to the Certification Verification</a>
+    <button id="goVerify" class="btn">Go to the Certification Verification</button>
   </main>
 
   <script src="/script.js"></script>
