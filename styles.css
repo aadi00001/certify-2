@@ -21,10 +21,10 @@ html, body {
   align-items: center;
   min-height: 100vh;
   overflow-x: hidden;
-  padding: 20px; /* small safe padding for mobile */
+  padding: 20px;
 }
 
-/* Card base — preserved look, but remove large top/bottom margins (we center with flex) */
+/* Card base */
 .card {
   width: 100%;
   max-width: 720px;
@@ -32,11 +32,11 @@ html, body {
   padding: 36px;
   border-radius: 12px;
   box-shadow: 0 6px 18px rgba(16,24,40,0.06);
-  margin: 0 auto; /* center horizontally inside flex layout */
+  margin: 0 auto;
 }
 
 /* Keep small variant for verify page if used */
-.card.small {
+.card.small, .verify-card {
   max-width: 640px;
   padding: 28px;
 }
@@ -89,30 +89,14 @@ html, body {
   font-size: 16px;
   cursor: pointer;
   transition: background .15s ease;
+  text-align: center;
+  text-decoration: none;
 }
 
-.btn:hover {
-  filter: brightness(.95);
-}
+.btn:hover { filter: brightness(.95); }
 
-/* Footer / bottom-bar - hide if not used */
-.bottom-bar {
-  display: none;
-  position: fixed;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  height: 66px;
-  background: #1f2937;
-  color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.url {
-  opacity: 0.9;
-}
+/* small text link */
+.example { font-size: 13px; color: var(--muted); text-decoration: none; }
 
 /* Labels, input, examples */
 .label {
@@ -123,11 +107,7 @@ html, body {
 }
 
 .example,
-.hint {
-  font-size: 13px;
-  color: var(--muted);
-  font-weight: 400;
-}
+.hint { font-size: 13px; color: var(--muted); font-weight: 400; }
 
 .input {
   width: 100%;
@@ -140,15 +120,7 @@ html, body {
   transition: border-color .12s ease, box-shadow .12s ease;
 }
 
-.input:focus {
-  border-color: var(--accent);
-  box-shadow: 0 4px 14px rgba(93,61,245,0.06);
-}
-
-/* Center helper */
-.center {
-  text-align: center;
-}
+.input:focus { border-color: var(--accent); box-shadow: 0 4px 14px rgba(93,61,245,0.06); }
 
 /* Responsive adjustments */
 @media (max-width: 520px) {
