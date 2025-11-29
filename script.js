@@ -1,7 +1,7 @@
 // FINAL SCRIPT — opens verify page with ?id= but requires manual verification
 
-const SITE_B = "https://certificate-id.netlify.app"; 
-const SITE_A = "https://certificate-id-verification.netlify.app/page/qr-verification";
+const SITE_B = "https://certificate-id-pro.netlify.app"; 
+const SITE_A = "https://certificate-id-verify.netlify.app/page/qr-verification";
 
 // ---------------------
 // GO TO VERIFICATION PAGE (button on main page)
